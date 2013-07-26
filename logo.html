@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Anderson Silva - Desafio que besteira - Front in Aracaju</title>
+	<link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-family: 'Denk One', sans-serif;
+		}
+		.text_felix{
+			font-size: 28px;
+			color: #000;
+			margin-top: 20px;
+			text-shadow: 1px 1px 2px #222;
+			text-align: center;
+			position: relative;
+		}
+		.credits{
+			font-size: 16px;
+		}
+		.area_logo {
+		width: 229px;
+		height: 328px;
+		margin: 20px auto 0;
+		}
+		.parte_01_laranja {
+		width: 47px;
+		height: 205px;
+		position: relative;
+		z-index: 0;
+		top: 123px;
+		left: 47px;
+		-webkit-transform: skew(25deg);
+		-moz-transform: skew(25deg);
+		-ms-transform: skew(25deg);
+		-o-transform: skew(25deg);
+		transform: skew(25deg);
+		background-image: linear-gradient(bottom, rgb(173,60,40) 15%, rgb(240,85,55) 50%);
+		background-image: -o-linear-gradient(bottom, rgb(173,60,40) 15%, rgb(240,85,55) 50%);
+		background-image: -moz-linear-gradient(bottom, rgb(173,60,40) 15%, rgb(240,85,55) 50%);
+		background-image: -webkit-linear-gradient(bottom, rgb(173,60,40) 15%, rgb(240,85,55) 50%);
+		background-image: -ms-linear-gradient(bottom, rgb(173,60,40) 15%, rgb(240,85,55) 50%);
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.15, rgb(173,60,40)), color-stop(0.5, rgb(240,85,55)));
+		}
+		.parte_02_laranja {
+		width: 47px;
+		height: 205px;
+		position: relative;
+		z-index: 1;
+		top: -82px;
+		left: 138px;
+		-webkit-transform: skew(-23deg);
+		-moz-transform: skew(-23deg);
+		-ms-transform: skew(-23deg);
+		-o-transform: skew(-23deg);
+		transform: skew(-23deg);
+		background-image: linear-gradient(bottom, rgb(235,57,37) 38%, rgb(239,79,51) 80%, rgb(195,70,45) 100%);
+		background-image: -o-linear-gradient(bottom, rgb(235,57,37) 38%, rgb(239,79,51) 80%, rgb(195,70,45) 100%);
+		background-image: -moz-linear-gradient(bottom, rgb(235,57,37) 38%, rgb(239,79,51) 80%, rgb(195,70,45) 100%);
+		background-image: -webkit-linear-gradient(bottom, rgb(235,57,37) 38%, rgb(239,79,51) 80%, rgb(195,70,45) 100%);
+		background-image: -ms-linear-gradient(bottom, rgb(235,57,37) 38%, rgb(239,79,51) 80%, rgb(195,70,45) 100%);
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.38, rgb(235,57,37)), color-stop(0.8, rgb(239,79,51)), color-stop(1, rgb(195,70,45)));
+		}
+		.parte_amarela {
+		width: 240px;
+		height: 32px;
+		position: relative;
+		z-index: 2;
+		top: -328px;
+		left: -6px;
+		-webkit-transform: rotate(16deg) skew(15deg);
+		-moz-transform: rotate(16deg) skew(15deg);
+		-ms-transform: rotate(16deg) skew(15deg);
+		-o-transform: rotate(16deg) skew(15deg);
+		transform: rotate(16deg) skew(15deg);
+		background: #f69c2a;
+		}
+		.parte_01_cinza {
+		width: 42px;
+		height: 100px;
+		position: relative;
+		z-index: 4;
+		top: -440px;
+		left: 72px;
+		-webkit-transform: skew(-25deg);
+		-moz-transform: skew(-23deg);
+		-ms-transform: skew(-23deg);
+		-o-transform: skew(-23deg);
+		transform: skew(-23deg);
+		background-image: linear-gradient(bottom, rgb(123,123,111) 30%, rgb(147,144,135) 70%);
+		background-image: -o-linear-gradient(bottom, rgb(123,123,111) 30%, rgb(147,144,135) 70%);
+		background-image: -moz-linear-gradient(bottom, rgb(123,123,111) 30%, rgb(147,144,135) 70%);
+		background-image: -webkit-linear-gradient(bottom, rgb(123,123,111) 30%, rgb(147,144,135) 70%);
+		background-image: -ms-linear-gradient(bottom, rgb(123,123,111) 30%, rgb(147,144,135) 70%);
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, rgb(123,123,111)), color-stop(0.7, rgb(147,144,135)));
+		}
+		.parte_02_cinza {
+		width: 42px;
+		height: 100px;
+		position: relative;
+		z-index: 0;
+		top: -539px;
+		left: 118px;
+		-webkit-transform: skew(25deg);
+		-moz-transform: skew(25deg);
+		-ms-transform: skew(25deg);
+		-o-transform: skew(25deg);
+		transform: skew(25deg);
+		background-image: linear-gradient(bottom, rgb(73,73,65) 47%, rgb(54,53,49) 70%);
+		background-image: -o-linear-gradient(bottom, rgb(73,73,65) 47%, rgb(54,53,49) 70%);
+		background-image: -moz-linear-gradient(bottom, rgb(73,73,65) 47%, rgb(54,53,49) 70%);
+		background-image: -webkit-linear-gradient(bottom, rgb(73,73,65) 47%, rgb(54,53,49) 70%);
+		background-image: -ms-linear-gradient(bottom, rgb(73,73,65) 47%, rgb(54,53,49) 70%);
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.47, rgb(73,73,65)), color-stop(0.7, rgb(54,53,49)));
+		}
+	</style>
+</head>
+<body>
+<div class="text_felix">Logo do Front in Aracaju<br><span class="credits" title="Anderson Silva - anderson-silva@outlook.com">by Anderson Silva</span></div>
+<div class="area_logo">
+  <div class="parte_01_laranja"></div>
+  <div class="parte_02_laranja"></div>
+  <div class="parte_amarela"></div>
+  <div class="parte_01_cinza"></div>
+  <div class="parte_02_cinza"></div>
+</div>
+</body>
+</html>
